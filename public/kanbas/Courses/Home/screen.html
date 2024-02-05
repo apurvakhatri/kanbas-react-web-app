@@ -1,538 +1,552 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Screen</title>
+<html>
+  <head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
-</head>
-<body>
-<table>
-    <tr>
-            <!-- Course/Navigation-->
-        <td>
-            <div class="wd-main-layout">
-                <div class="wd-flex-navbar">
-                    <ul>
-                        <li class="wd-bg-black mb-2 mt-2">
-                            <img src="/images/neu_icon.png" />
-                        </li>
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+  </head>
+  <body>
+    <!-- Implement links to Kanbas and Course Navigation -->
+    <div class="d-flex">
+      <div class="d-none d-md-block">
+        <ul class="wd-kanbas-navigation">
+          <!-- Copy Kanbas Navigation Here -->
+          <div class="wd-main-layout">
+            <div class="wd-flex-navbar">
+                <ul>
+                    <li class="wd-bg-black mb-2 mt-2">
+                        <img src="/images/neu_icon.png" />
+                    </li>
 
-                        <li class="wd-home-nav-icon">
-                            <a class="wd-fg-white" href="../account/account.html"
-                            ><i class="fa fa-user fa-2x wd-fg-white" aria-hidden="true"></i
-                            ></a>
-                        </li>
-                        <li class="wd-home-nav-text">
-                            <a class="wd-fg-white" href="../account/account.html">Account</a>
-                        </li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="../account/account.html"
+                        ><i class="fa fa-user fa-2x wd-fg-white" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="../account/account.html">Account</a>
+                    </li>
 
-                        <li class="wd-home-nav-icon">
-                            <a class="wd-fg-white" href="../dashboard/index.html"
-                            ><i class="fa fa-tachometer fa-2x wd-bg-red" aria-hidden="true"></i
-                            ></a>
-                        </li>
-                        <li class="wd-home-nav-text">
-                            <a class="wd-fg-white" href="../dashboard/index.html">Dashboard</a>
-                        </li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="../dashboard/index.html"
+                        ><i class="fa fa-tachometer fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="../dashboard/index.html">Dashboard</a>
+                    </li>
 
-                        <li class="wd-home-nav-icon">
-                            <a class="wd-fg-white" href="../courses/Home/index.html"
-                            ><i class="fa fa-book fa-2x wd-bg-red" aria-hidden="true"></i
-                            ></a>
-                        </li>
-                        <li class="wd-home-nav-text">
-                            <a class="wd-fg-white" href="../courses/Home/index.html">Courses</a>
-                        </li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="../courses/Home/index.html"
+                        ><i class="fa fa-book fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="../courses/Home/index.html">Courses</a>
+                    </li>
 
-                        <li class="wd-home-nav-icon">
-                            <a class="wd-fg-white" href="#"
-                            ><i class="fa fa-calendar fa-2x wd-bg-red" aria-hidden="true"></i
-                            ></a>
-                        </li>
-                        <li class="wd-home-nav-text">
-                            <a class="wd-fg-white" href="#">Calendar</a>
-                        </li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                        ><i class="fa fa-calendar fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Calendar</a>
+                    </li>
 
-                        <li class="wd-home-nav-icon">
-                            <a class="wd-fg-white" href="#"
-                            ><i class="fa fa-inbox fa-2x wd-bg-red" aria-hidden="true"></i
-                            ></a>
-                        </li>
-                        <li class="wd-home-nav-text">
-                            <a class="wd-fg-white" href="#">Inbox</a>
-                        </li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                        ><i class="fa fa-inbox fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Inbox</a>
+                    </li>
 
-                        <li class="wd-home-nav-icon">
-                            <a class="wd-fg-white" href="#"
-                            ><i class="fa fa-history fa-2x wd-bg-red" aria-hidden="true"></i
-                            ></a>
-                        </li>
-                        <li class="wd-home-nav-text">
-                            <a class="wd-fg-white" href="#">History</a>
-                        </li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                        ><i class="fa fa-history fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">History</a>
+                    </li>
 
-                        <li class="wd-home-nav-icon">
-                            <a class="wd-fg-white" href="#"
-                            ><i class="fa fa-desktop fa-2x wd-bg-red" aria-hidden="true"></i
-                            ></a>
-                        </li>
-                        <li class="wd-home-nav-text">
-                            <a class="wd-fg-white" href="#">Studio</a>
-                        </li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                        ><i class="fa fa-desktop fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Studio</a>
+                    </li>
 
-                        <li class="wd-home-nav-icon">
-                            <a class="wd-fg-white" href="#"
-                            ><i
-                                    class="fa fa-arrow-circle-o-right fa-2x wd-bg-red"
-                                    aria-hidden="true"
-                            ></i
-                            ></a>
-                        </li>
-                        <li class="wd-home-nav-text"><a class="wd-fg-white" href="#">Commons</a></li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                        ><i
+                                class="fa fa-arrow-circle-o-right fa-2x wd-bg-red"
+                                aria-hidden="true"
+                        ></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text"><a class="wd-fg-white" href="#">Commons</a></li>
 
-                        <li class="wd-home-nav-icon">
-                            <a class="wd-fg-white" href="#"
-                            ><i class="fa fa-question-circle fa-2x wd-bg-red" aria-hidden="true"></i
-                            ></a>
-                        </li>
-                        <li class="wd-home-nav-text">
-                            <a class="wd-fg-white" href="#">Help</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                        ><i class="fa fa-question-circle fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Help</a>
+                    </li>
+                </ul>
             </div>
-        </td>
-        <!-- Course navigation-->
-        <td>
-    <ul class="wd-navigation"   >
-    <li class="wd-active">
-        <a href="/Kanbas/Courses/Home/screen.html">
-            Home</a></li>
-    <li><a href="/Kanbas/Courses/Modules/screen.html">
-        Modules</a></li>
-    <li><a href="/Kanbas/Courses/Piazza/index.html">
-        Piazza</a></li>
-    <li><a href="/Kanbas/Courses/Grades/screen.html">
-        Grades</a></li>
-    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-        Assignments</a></li>
-    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-        Zoom Meetings</a></li>
-    <li><a href="/Kanbas/Courses/Quizzes/screen.html">
-        Quizzes</a></li>
-    <li><a href="/Kanbas/Courses/People/screen.html">
-        People</a></li>
-    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-        Panopto Video</a></li>
-    <li><a href="/Kanbas/Courses/Discussions/screen.html">
-        Discussions</a></li>
-    <li><a href="/Kanbas/Courses/Announcements/screen.html">
-        Announcements</a></li>
-    <li><a href="/Kanbas/Courses/Pages/screen.html">
-        Pages</a></li>
-    <li><a href="/Kanbas/Courses/Files/screen.html">
-        Files</a></li>
-    <li><a href="/Kanbas/Courses/Rubrics/screen.html">
-        Rubrics</a></li>
-    <li><a href="/Kanbas/Courses/Outcomes/screen.html">
-        Outcomes</a></li>
-    <li><a href="/Kanbas/Courses/Collaborations/screen.html">
-        Collaborations</a></li>
-    <li><a href="/Kanbas/Courses/Syllabus/screen.html">
-        Syllabus</a></li>
-    <li><a href="/Kanbas/Courses/Settings/screen.html">
-        Settings</a></li>
-        </td>
+        </div>
 
-        <td>
-            <div class="wd-main-layout">
-                <!-- Flex column -->
-                <div class="wd-flex-course-screen">
-                    <!-- Flex row -->
-                    <div class="wd-courses-content">
+        </ul>
+      </div>
+      <div class="d-none d-md-block">
+        <ul class="wd-navigation">
+          <!-- Copy Course Navigation Here -->
+          <ul class="wd-navigation"   >
+            <li>
+                <a href="/Kanbas/Courses/Home/screen.html">
+                    Home</a></li>
+            <li class="wd-active"><a href="/Kanbas/Courses/Modules/screen.html">
+                Modules</a></li>
+            <li><a href="/Kanbas/Courses/Piazza/index.html">
+                Piazza</a></li>
+            <li><a href="/Kanbas/Courses/Grades/screen.html">
+                Grades</a></li>
+            <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                Assignments</a></li>
+            <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                Zoom Meetings</a></li>
+            <li><a href="/Kanbas/Courses/Quizzes/screen.html">
+                Quizzes</a></li>
+            <li><a href="/Kanbas/Courses/People/screen.html">
+                People</a></li>
+            <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                Panopto Video</a></li>
+            <li><a href="/Kanbas/Courses/Discussions/screen.html">
+                Discussions</a></li>
+            <li><a href="/Kanbas/Courses/Announcements/screen.html">
+                Announcements</a></li>
+            <li><a href="/Kanbas/Courses/Pages/screen.html">
+                Pages</a></li>
+            <li><a href="/Kanbas/Courses/Files/screen.html">
+                Files</a></li>
+            <li><a href="/Kanbas/Courses/Rubrics/screen.html">
+                Rubrics</a></li>
+            <li><a href="/Kanbas/Courses/Outcomes/screen.html">
+                Outcomes</a></li>
+            <li><a href="/Kanbas/Courses/Collaborations/screen.html">
+                Collaborations</a></li>
+            <li><a href="/Kanbas/Courses/Syllabus/screen.html">
+                Syllabus</a></li>
+            <li><a href="/Kanbas/Courses/Settings/screen.html">
+                Settings</a></li>
 
-                        <!-- Flex column -->
-                        <div class="wd-flex-course-modules col-8">
-                            <div class="wd-course-module-header-buttons">
-                                <div class="buttons float-end">
-                                    <button class="btn wd-bg-lightgray">Collapse All</button>
-                                    <button class="btn wd-bg-lightgray">View Progress</button>
-                                    <select class="btn wd-bg-lightgray">
-                                        <option selected>Publish All</option>
-                                    </select>
-                                    <button class="btn btn-danger">
-                                        <i class="fa fa-plus" aria-hidden="true"></i> Module
-                                    </button>
-                                    <button class="btn wd-bg-lightgray">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="wd-course-module-info">
-                                <ul class="list-group mb-4">
-                                    <li class="list-group-item wd-list-module-name">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i> Week 0 -
-                                        INTRO
-                                        <span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
+        </ul>
 
-                                    <li class="list-group-item wd-list-module-title">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i> LEARNING
-                                        OBJECTIVES<span
-                                            class="wd-check-ellipse-button-float-end float-end"
-                                        >
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
+        </ul>
+      </div>
+      <div class="flex-fill">
+        <ul class="list-group wd-modules">
+          <!-- Copy Course Home here -->
+          <div class="wd-main-layout">
+            <!-- Flex column -->
+            <div class="wd-flex-course-screen">
+                <!-- Flex row -->
+                <div class="wd-courses-content">
 
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span>Introduction to the course</span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span>Learn what is Web Development</span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span>Creating a development environment</span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span>Creating a Web Application</span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span>Getting started with the 1st assignment</span>
-                                        <span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-
-                                    <li class="list-group-item wd-list-module-title">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i> READING<span
-                                            class="wd-check-ellipse-button-float-end float-end"
-                                        >
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span>Full Stack Developer - Chapter 1 - Introduction</span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span
-                                            >Full Stack Developer - Chapter 2 - Creating User Interfaces
-                                            with HTML</span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-
-                                    <li class="list-group-item wd-list-module-title">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i> SLIDES<span
-                                            class="wd-check-ellipse-button-float-end float-end"
-                                        >
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span
-                                            ><a href="https://www.google.com/"
-                                                >Introduction to Web Development Links to an external
-                                                site.</a
-                                            ></span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span
-                                            ><a href="https://www.google.com/"
-                                                >Creating an HTTP server with Node.js Links to an
-                                                external site.</a
-                                            ></span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span
-                                            ><a href="https://www.google.com/"
-                                                >Creating a React Application Links to an external
-                                                site.</a
-                                            ></span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                </ul>
-
-                                <ul class="list-group mb-4">
-                                    <li class="list-group-item wd-list-module-name">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i> Week 1 -
-                                        HTML<span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-
-                                    <li class="list-group-item wd-list-module-title">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i> LEARNING
-                                        OBJECTIVES<span
-                                            class="wd-check-ellipse-button-float-end float-end"
-                                        >
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span>Learn how to create user interfaces with HTML</span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span>Keep working on assignment 1</span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span>Deploy the assignment to Netlify</span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-
-                                    <li class="list-group-item wd-list-module-title">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i> READING<span
-                                            class="wd-check-ellipse-button-float-end float-end"
-                                        >
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span
-                                            ><a href="https://www.google.com/"
-                                                >Full Stack Developer - Chapter 1 - Introduction</a
-                                            ></span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                    <li class="list-group-item wd-list-module-element">
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-                                        ><span
-                                            ><a href="https://www.google.com/"
-                                                >Full Stack Developer - Chapter 2 - Creating User
-                                                Interfaces with HTML</a
-                                            ></span
-                                        ><span class="wd-check-ellipse-button-float-end float-end">
-                                            <i
-                                                class="fa fa-check-circle wd-fg-green"
-                                                aria-hidden="true"
-                                            >
-                                            </i>
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </li>
-                                </ul>
+                    <!-- Flex column -->
+                    <div class="wd-flex-course-modules col-8">
+                        <div class="wd-course-module-header-buttons">
+                            <div class="buttons float-end">
+                                <button class="btn wd-bg-lightgray">Collapse All</button>
+                                <button class="btn wd-bg-lightgray">View Progress</button>
+                                <select class="btn wd-bg-lightgray">
+                                    <option selected>Publish All</option>
+                                </select>
+                                <button class="btn btn-danger">
+                                    <i class="fa fa-plus" aria-hidden="true"></i> Module
+                                </button>
+                                <button class="btn wd-bg-lightgray">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                </button>
                             </div>
                         </div>
+                        <hr />
+                        <div class="wd-course-module-info">
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item wd-list-module-name">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i> Week 0 -
+                                    INTRO
+                                    <span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
 
-                        <div class="wd-flex-course-status d-none d-xl-block">
-                            Course Status
-                            <div class="wd-course-status-buttons">
-                                <button class="btn wd-bg-lightgray">
-                                    <i class="fa fa-ban" aria-hidden="true"></i> Unpublish
-                                </button>
-                                <button class="btn btn-success">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i> Published
-                                </button>
-                            </div>
-                            <br />
-                            <button class="btn wd-bg-lightgray mb-2">Import Existing Content</button
-                            ><br />
-                            <button class="btn wd-bg-lightgray mb-2">Import from Commons</button><br />
-                            <button class="btn wd-bg-lightgray mb-2">Choose Home Page</button><br />
-                            <button class="btn wd-bg-lightgray mb-2">View Course Stream</button><br />
-                            <button class="btn wd-bg-lightgray mb-2">New Announcement</button><br />
-                            <button class="btn wd-bg-lightgray mb-2">New Analytics</button><br />
-                            <button class="btn wd-bg-lightgray mb-2">View Course Notifications</button
-                            ><br />
+                                <li class="list-group-item wd-list-module-title">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i> LEARNING
+                                    OBJECTIVES<span
+                                        class="wd-check-ellipse-button-float-end float-end"
+                                    >
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
 
-                            <div class="col-8">
-                                Coming Up
-                                <ul>
-                                    <li>Lecture CS4550.12631.202410 Sep 7 at 11:45am</li>
-                                    <li>Lecture CS4550.12631.202410 Sep 11 att 11:45am</li>
-                                    <li>CS5610 06 SP23 Lecture Sep 11 at 6pm</li>
-                                </ul>
-                            </div>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span>Introduction to the course</span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span>Learn what is Web Development</span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span>Creating a development environment</span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span>Creating a Web Application</span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span>Getting started with the 1st assignment</span>
+                                    <span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+
+                                <li class="list-group-item wd-list-module-title">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i> READING<span
+                                        class="wd-check-ellipse-button-float-end float-end"
+                                    >
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span>Full Stack Developer - Chapter 1 - Introduction</span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span
+                                        >Full Stack Developer - Chapter 2 - Creating User Interfaces
+                                        with HTML</span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+
+                                <li class="list-group-item wd-list-module-title">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i> SLIDES<span
+                                        class="wd-check-ellipse-button-float-end float-end"
+                                    >
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span
+                                        ><a href="https://www.google.com/"
+                                            >Introduction to Web Development Links to an external
+                                            site.</a
+                                        ></span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span
+                                        ><a href="https://www.google.com/"
+                                            >Creating an HTTP server with Node.js Links to an
+                                            external site.</a
+                                        ></span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span
+                                        ><a href="https://www.google.com/"
+                                            >Creating a React Application Links to an external
+                                            site.</a
+                                        ></span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item wd-list-module-name">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i> Week 1 -
+                                    HTML<span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+
+                                <li class="list-group-item wd-list-module-title">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i> LEARNING
+                                    OBJECTIVES<span
+                                        class="wd-check-ellipse-button-float-end float-end"
+                                    >
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span>Learn how to create user interfaces with HTML</span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span>Keep working on assignment 1</span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span>Deploy the assignment to Netlify</span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+
+                                <li class="list-group-item wd-list-module-title">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i> READING<span
+                                        class="wd-check-ellipse-button-float-end float-end"
+                                    >
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span
+                                        ><a href="https://www.google.com/"
+                                            >Full Stack Developer - Chapter 1 - Introduction</a
+                                        ></span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item wd-list-module-element">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                                    ><span
+                                        ><a href="https://www.google.com/"
+                                            >Full Stack Developer - Chapter 2 - Creating User
+                                            Interfaces with HTML</a
+                                        ></span
+                                    ><span class="wd-check-ellipse-button-float-end float-end">
+                                        <i
+                                            class="fa fa-check-circle wd-fg-green"
+                                            aria-hidden="true"
+                                        >
+                                        </i>
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="wd-flex-course-status d-none d-xl-block">
+                        Course Status
+                        <div class="wd-course-status-buttons">
+                            <button class="btn wd-bg-lightgray">
+                                <i class="fa fa-ban" aria-hidden="true"></i> Unpublish
+                            </button>
+                            <button class="btn btn-success">
+                                <i class="fa fa-check-circle" aria-hidden="true"></i> Published
+                            </button>
+                        </div>
+                        <br />
+                        <button class="btn wd-bg-lightgray mb-2">Import Existing Content</button
+                        ><br />
+                        <button class="btn wd-bg-lightgray mb-2">Import from Commons</button><br />
+                        <button class="btn wd-bg-lightgray mb-2">Choose Home Page</button><br />
+                        <button class="btn wd-bg-lightgray mb-2">View Course Stream</button><br />
+                        <button class="btn wd-bg-lightgray mb-2">New Announcement</button><br />
+                        <button class="btn wd-bg-lightgray mb-2">New Analytics</button><br />
+                        <button class="btn wd-bg-lightgray mb-2">View Course Notifications</button
+                        ><br />
+
+                        <div class="col-8">
+                            Coming Up
+                            <ul>
+                                <li>Lecture CS4550.12631.202410 Sep 7 at 11:45am</li>
+                                <li>Lecture CS4550.12631.202410 Sep 11 att 11:45am</li>
+                                <li>CS5610 06 SP23 Lecture Sep 11 at 6pm</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </td>
-    </tr>
-</table>
-</body>
+        </div>
+        </ul>
+      </div>
+      <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
+        <h3>Course Status</h3>
+          <!-- Implement Course Status here -->
+
+      </div>
+    </div>
+  </body>
 </html>
