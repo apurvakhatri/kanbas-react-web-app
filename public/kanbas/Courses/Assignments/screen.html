@@ -147,100 +147,368 @@
         </td>
 
         <td>
-            <input id="search-assignment" placeholder="Search for Assignments">
-            <button>Group</button>
-            <button>Assignment</button>
-            <select>
-                <option>Edit Assignment Dates</option>
-            </select>
-            <hr>
-            <table>
-                <tbody>
-                <tr>
-                    <h3>
-                        ASSIGNMENTS 40% of Total
-                        <select>
-                            <option>Edit</option>
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To..</option>
-                            <option>Send To..</option>
-                            <option>Copy To..</option>
-                            <option>Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 - ENV + HTML </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 - CSS + BOOTSTRAP </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 - JS + REACT </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 - STATE + REDUX </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A5 - NODE + SESSION </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">A6 - MONGO + MONGOOSE </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                    </ul>
-                </tr>
-                <tr>
-                    <h3>
-                        QUIZZES 10% of Total
-                        <select>
-                            <option>Edit</option>
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To..</option>
-                            <option>Send To..</option>
-                            <option>Copy To..</option>
-                            <option>Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q1 - HTML </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet yet</li>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q2 - CSS </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q3 - JS, ES6 </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q4 - NODE </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q5 - MONGO </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                    </ul>
-                </tr>
-                <tr>
-                    <h3>
-                        EXAMS 20% of Total
-                        <select>
-                            <option>Edit</option>
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To..</option>
-                            <option>Send To..</option>
-                            <option>Copy To..</option>
-                            <option>Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html"> Midterm </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet yet</li>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html"> Final </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet</li>
-                    </ul>
-                </tr>
-                <tr>
-                    <h3>
-                        PROJECT 30% of Total
-                        <select>
-                            <option>Edit</option>
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To..</option>
-                            <option>Send To..</option>
-                            <option>Copy To..</option>
-                            <option>Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html"> Project </a></A1><br/> <a href="#"> Multiple Modules </a>| Not available yet yet</li>
-                    </ul>
-                </tr>
-                </tbody>
-            </table>
+                                <!-- Flex column -->
+                                <div class="wd-flex-course-assignments col-10">
+                                    <div class="wd-course-assignments-header">
+                                        <input
+                                            class="form-control w-25 float-start"
+                                            type="text"
+                                            placeholder="Search for Assignment"
+                                        />
+                                        <div class="buttons float-end">
+                                            <button class="btn wd-bg-lightgray">
+                                                <i class="fa fa-plus" aria-hidden="true"></i> Group
+                                            </button>
+                                            <button class="btn btn-danger">
+                                                <i class="fa fa-plus" aria-hidden="true"></i> Assignment
+                                            </button>
+                                            <button class="btn wd-bg-lightgray">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="wd-course-assignments-info">
+                                        <ul class="list-group mb-4">
+                                            <li class="list-group-item wd-list-assignment-type">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v me-2" aria-hidden="true"></i>
+                                                Assignments
+                                                <span class="wd-check-ellipse-button-float-end float-end">
+                                                    <span class="wd-custom-round-border me-2"
+                                                        >40% of total</span
+                                                    >
+                                                    <i class="fa fa-plus me-2" aria-hidden="true"></i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">A1 SETUP</a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Sep 18</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">A2 HTML</a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Sep 25</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">A3 CSS </a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Oct 2</span> |
+                                                100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">A4 BOOTSTRAP </a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Oct 10</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">A5 - JAVASCRIPT</a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Oct 16</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">A6 - REACT</a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Oct 30</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="list-group mb-4">
+                                            <li class="list-group-item wd-list-assignment-type">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v me-2" aria-hidden="true"></i> Quizzes
+                                                <span class="wd-check-ellipse-button-float-end float-end">
+                                                    <span class="wd-custom-round-border me-2"
+                                                        >10% of total</span
+                                                    >
+                                                    <i class="fa fa-plus me-2" aria-hidden="true"></i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">Q1 - HTML</a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Sep 18</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">Q2 - CSS </a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Sep 25</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">Q3 - JS, ES6 </a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Oct 2</span> |
+                                                100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">Q4 - NODE </a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Oct 10</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">Q5 - MONGO</a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Oct 16</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="list-group mb-4">
+                                            <li class="list-group-item wd-list-assignment-type">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v me-2" aria-hidden="true"></i> Exams
+                                                <span class="wd-check-ellipse-button-float-end float-end">
+                                                    <span class="wd-custom-round-border me-2"
+                                                        >20% of total</span
+                                                    >
+                                                    <i class="fa fa-plus me-2" aria-hidden="true"></i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">Midterm</a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Oct 18</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">Final </a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Dec 14</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="list-group mb-4">
+                                            <li class="list-group-item wd-list-assignment-type">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v me-2" aria-hidden="true"></i> Project
+                                                <span class="wd-check-ellipse-button-float-end float-end">
+                                                    <span class="wd-custom-round-border me-2"
+                                                        >30% of total</span
+                                                    >
+                                                    <i class="fa fa-plus me-2" aria-hidden="true"></i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item wd-list-assignment-element">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                <i class="fa fa-pencil-square-o wd-fg-green ms-2" aria-hidden="true"></i>
+                                                <span class="wd-list-assignment-element-title"
+                                                    ><a href="edit.html">Final Project</a></span
+                                                >
+                                                <br />
+                                                <span class="wd-list-assignment-element-desc">Due Dec 16</span>
+                                                | 100 pts yet<span
+                                                    class="wd-check-ellipse-button-float-end float-end"
+                                                >
+                                                    <i
+                                                        class="fa fa-check-circle wd-fg-green"
+                                                        aria-hidden="true"
+                                                    >
+                                                    </i>
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
         </td>
+
     </tr>
 </table>
 </body>
