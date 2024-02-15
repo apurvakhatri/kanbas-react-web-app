@@ -3,7 +3,9 @@ import VariableTypes from "./variables/VariableTypes";
 import BooleanVariables from "./variables/BooleanVariables";
 import IfElse from "./conditionals/IfElse";
 import TernaryOperator from "./conditionals/TernaryOperator";
-
+import ES5Functions from "./functions/ES5Functions"
+import ArrowFunctions from "./functions/ArrowFunctions"
+import FunctionParenthesisAndParameters from "./functions/FunctionParenthesisAndParameters"
 
 function JavaScript() {
     console.log('Hello World!');
@@ -15,6 +17,9 @@ function JavaScript() {
         <BooleanVariables />
         <IfElse />
         <TernaryOperator />
+        <ES5Functions />
+        <ArrowFunctions />
+        <FunctionParenthesisAndParameters />
     </div>
    );
 }
