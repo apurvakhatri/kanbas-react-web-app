@@ -6,6 +6,7 @@ import TernaryOperator from "./conditionals/TernaryOperator";
 import ES5Functions from "./functions/ES5Functions"
 import ArrowFunctions from "./functions/ArrowFunctions"
 import FunctionParenthesisAndParameters from "./functions/FunctionParenthesisAndParameters"
+import WorkingWithArrays from "./arrays/WorkingWithArrays"
 
 function JavaScript() {
     console.log('Hello World!');
@@ -20,6 +21,7 @@ function JavaScript() {
         <ES5Functions />
         <ArrowFunctions />
         <FunctionParenthesisAndParameters />
+        <WorkingWithArrays />
     </div>
    );
 }
