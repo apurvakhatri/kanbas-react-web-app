@@ -1,33 +1,42 @@
 /* index.css */
 
-/* Targeting the ul element with class wd-kanbas-navigation */
-.wd-kanbas-navigation {
-  list-style: none; /* Remove default list styles */
-  padding: 0; /* Remove default padding */
+/* .list-group {
+    background-color: black;
+} */
+
+.wd-kanbas-navigation-list .list-group-item {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0px;
+  }
+
+.wd-kanbas-navigation-list .wd-icon {
+    color:red;
+    font-size: 2em;
 }
 
-/* Targeting the li elements within wd-kanbas-navigation */
-.wd-kanbas-navigation li {
-  margin-bottom: 10px; /* Add spacing between list items */
+.wd-kanbas-navigation-list .wd-icon.wd-account {
+    color:lightslategray;
 }
 
-/* Targeting the Link component within the li elements */
-.wd-kanbas-navigation li a {
-  text-decoration: none; /* Remove default underline */
-  color: black; /* Set text color */
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Vertically center items */
-  padding: 10px; /* Add padding to create clickable area */
-  border-radius: 5px; /* Add border radius for rounded corners */
-}
+/* To remove the border from first element on the navigation bar */
+.wd-kanbas-navigation-list .list-group-item:first-child {
+    border: none;
+    border-radius: 0px;
+  }
 
-/* Targeting the icons within the Link components */
-.wd-kanbas-navigation li a svg {
-  margin-right: 10px; /* Add spacing between icon and label */
-}
+.wd-kanbas-navigation-list .list-group-item.active {
+    background-color: white;
+    color: red;
+    /* border: none;
+    padding: 0px; */
+  }
 
-/* Targeting the active link */
-.wd-kanbas-navigation li.active a {
-  background-color: black; /* Set background color for active link */
-  color: white; /* Set text color for active link */
-}
+  .wd-fg-white {
+    color: white;
+  }
+
+  .wd-kanbas-navigation-list {
+    height: 100%;
+  }

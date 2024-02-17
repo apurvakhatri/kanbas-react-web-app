@@ -1,21 +1,31 @@
 import { Link, useLocation } from "react-router-dom";
 import "./index.css";
-import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt } from "react-icons/fa";
+import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt,
+        FaInbox, FaRegClock, FaLaptop, FaRegQuestionCircle } from "react-icons/fa";
+
+
 function KanbasNavigation() {
   const links = [
-    { label: "Account",   icon: <FaRegUserCircle className="fs-2" />  },
-    { label: "Dashboard", icon: <FaTachometerAlt className="fs-2" />  },
-    { label: "Courses",   icon: <FaBook className="fs-2" />           },
-    { label: "Calendar",  icon: <FaRegCalendarAlt className="fs-2" /> },
+    { label: "Account",   icon: <FaRegUserCircle className="wd-icon" />  },
+    { label: "Dashboard", icon: <FaTachometerAlt className="wd-icon" />  },
+    { label: "Courses",   icon: <FaBook className="wd-icon" />           },
+    { label: "Calendar",  icon: <FaRegCalendarAlt className="wd-icon" /> },
+    { label: "Inbox",  icon: <FaInbox className="wd-icon" /> },
+    { label: "History",  icon: <FaRegClock className="wd-icon" /> },
+    { label: "Studio",  icon: <FaLaptop className="wd-icon" /> },
+    { label: "Help",  icon: <FaRegQuestionCircle className="wd-icon" /> },
   ];
   const { pathname } = useLocation();
   return (
-    <ul className="wd-kanbas-navigation">
+    <div className="list-group wd-kanbas-navigation-list">
       {links.map((link, index) => (
-        <li key={index} className={pathname.includes(link.label) ? "wd-active" : ""}>
-          <Link to={`/Kanbas/${link.label}`}> {link.icon} {link.label}
+        <li key={index} className={`mb-3 list-group-item ${pathname.includes(link.label) && "active"}`}>
+          <Link to={`/Kanbas/${link.label}`}>
+                {link.icon}
+                 <br />
+                {link.label}
           </Link>
-</li>
-))} </ul>
+        </li>
+))} </div>
 ); }
 export default KanbasNavigation;
