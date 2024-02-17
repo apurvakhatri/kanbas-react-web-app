@@ -1,0 +1,33 @@
+/* index.css */
+
+/* Targeting the ul element with class wd-kanbas-navigation */
+.wd-kanbas-navigation {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+/* Targeting the li elements within wd-kanbas-navigation */
+.wd-kanbas-navigation li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+/* Targeting the Link component within the li elements */
+.wd-kanbas-navigation li a {
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set text color */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center items */
+  padding: 10px; /* Add padding to create clickable area */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Targeting the icons within the Link components */
+.wd-kanbas-navigation li a svg {
+  margin-right: 10px; /* Add spacing between icon and label */
+}
+
+/* Targeting the active link */
+.wd-kanbas-navigation li.active a {
+  background-color: black; /* Set background color for active link */
+  color: white; /* Set text color for active link */
+}
