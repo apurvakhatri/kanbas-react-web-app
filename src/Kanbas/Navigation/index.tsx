@@ -18,6 +18,9 @@ function KanbasNavigation() {
   const { pathname } = useLocation();
   return (
     <div className="list-group wd-kanbas-navigation-list">
+        <a className={`kanbas-no-underline kanbas-sidebar-unselected kanbas-icon-padding`}>
+            <img style={{ width: "75%" }} src="/images/neu_icon.png" />
+        </a>
       {links.map((link, index) => (
         <li key={index} className={`mb-3 list-group-item ${pathname.includes(link.label) && "active"}`}>
           <Link to={`/Kanbas/${link.label}`}>

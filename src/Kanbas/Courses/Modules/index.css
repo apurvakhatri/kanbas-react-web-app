@@ -1,3 +1,8 @@
+.wd-modules-list .wd-module-item h5,
+.wd-modules-list .wd-module-item p {
+    color: black;
+}
+
 .btn.wd-bg-lightgray {
     background-color: 	#f1f1f1;
 }
@@ -12,6 +17,9 @@
     border-radius: 0px !important;
 
 }
+
+
+
 
 
 .list-group.wd-modules-list {

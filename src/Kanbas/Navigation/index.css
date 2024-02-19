@@ -9,34 +9,29 @@
     color: white;
     border: none;
     padding: 0px;
-  }
+}
 
 .wd-kanbas-navigation-list .wd-icon {
-    color:red;
+    color: red;
     font-size: 2em;
 }
 
-.wd-kanbas-navigation-list .wd-icon.wd-account {
-    color:lightslategray;
-}
-
-/* To remove the border from first element on the navigation bar */
-.wd-kanbas-navigation-list .list-group-item:first-child {
-    border: none;
-    border-radius: 0px;
-  }
-
+/* To style the active state */
 .wd-kanbas-navigation-list .list-group-item.active {
     background-color: white;
     color: red;
-    /* border: none;
-    padding: 0px; */
-  }
+}
 
-  .wd-fg-white {
+/* To remove the border from the first element on the navigation bar */
+.wd-kanbas-navigation-list .list-group-item:first-child {
+    border: none;
+    border-radius: 0px;
+}
+
+.wd-fg-white {
     color: white;
-  }
+}
 
-  .wd-kanbas-navigation-list {
+.wd-kanbas-navigation-list {
     height: 100%;
-  }
+}
