@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import {assignments} from "../../Database";
+import { assignments } from "../../Database";
 import { AiOutlinePlus, AiFillCheckCircle } from "react-icons/ai";
 import { HiOutlineEllipsisVertical } from "react-icons/hi2";
 import { TfiPencilAlt } from 'react-icons/tfi';
@@ -11,6 +11,7 @@ function Assignments() {
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId
   );
+
   return (
     <div className="me-5">
       <div className="wd-assignments-header mt-2">
@@ -67,4 +68,5 @@ function Assignments() {
     </div>
   );
 }
+
 export default Assignments;
