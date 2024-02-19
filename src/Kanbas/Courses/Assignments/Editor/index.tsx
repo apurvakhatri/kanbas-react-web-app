@@ -5,8 +5,8 @@ import {assignments} from "../../../Database";
 function Editor() {
   const { assignmentId } = useParams();
   const assignment = assignments.find(
-    (assignment) => assignment._id === assignmentId
-  );
+      (assignment) => assignment._id === assignmentId
+    );
 
   const { courseId } = useParams();
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ function Editor() {
   return (
     <div className="mt-2">
       <h6>Assignment Name</h6>
-      <input value={assignment.title} className="form-control mb-2" />
+      <input value={assignment!.title} className="form-control mb-2" />
       <hr />
       <div className="float-end me-3">
       <Link
