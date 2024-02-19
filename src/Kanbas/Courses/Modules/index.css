@@ -3,6 +3,19 @@
     color: black;
 }
 
+.ellipsis-icon {
+  color: black;
+}
+
+.module-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+}
+
 .btn.wd-bg-lightgray {
     background-color: 	#f1f1f1;
 }
