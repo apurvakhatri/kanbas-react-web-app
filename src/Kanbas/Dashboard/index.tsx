@@ -17,7 +17,12 @@ function Dashboard() {
       _id: new Date().getTime().toString() };
       setCourses([...courses, { ...course, ...newCourse }]);
     };
-  return (
+
+  const deleteCourse = (courseId: string) => {
+    setCourses(courses.filter((course) => course._id !== courseId));
+  };
+
+    return (
     <div className="p-4">
       <h1>Dashboard</h1>              <hr />
       <input value={course.name} className="form-control"  onChange={(e) => setCourse({ ...course, name: e.target.value }) }/>
@@ -35,10 +40,18 @@ function Dashboard() {
                 <div className="card-body">
                   <Link className="card-title" to={`/Kanbas/Courses/${course._id}/Home`}
                     style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>
-                    {course.name} </Link>
+                    {course.name}
+                    <button onClick={(event) => {
+                      event.preventDefault();
+                      deleteCourse(course._id);
+                    }}>
+                      Delete
+                      </button>
+                    </Link>
                   <p className="card-text">{course.name}</p>
                   <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-primary">
                     Go </Link>
+
                 </div>
               </div>
             </div>
