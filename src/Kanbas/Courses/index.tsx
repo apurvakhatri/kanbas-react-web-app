@@ -10,9 +10,9 @@ import Editor from "./Assignments/Editor"
 import Grades from "./Grades";
 
 
-function Courses() {
+function Courses( {courses}: {courses: any}) {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const course = courses.find((course: any) => course._id === courseId);
   return (
     <div>
       <h1><HiMiniBars3 /> Course {course?.name}</h1>
