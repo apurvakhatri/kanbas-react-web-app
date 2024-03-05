@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { useParams } from "react-router-dom";
 import { modules } from "../../Database";
 import './index.css';
@@ -8,12 +8,38 @@ import { HiOutlineEllipsisVertical } from "react-icons/hi2";
 
 function List() {
   const { courseId } = useParams();
+
+  const [moduleList, setModuleList] = useState(modules);
+
+  const [module, setModule] = useState({
+    name: "New Module",
+    description: "New Description",
+    course: courseId,
+  });
+
+  const addModule = (module: any) => {
+    const newModule = { ...module,
+      _id: new Date().getTime().toString() };
+      const newModuleList = [newModule, ...moduleList];
+      setModuleList(newModuleList);
+    };
+
   const modulesData = modules;
   return (
   <div>
     <ModuleButtons/>
     <br/><br/>
     <ul className="list-group wd-modules-list">
+      <li className="list-group-item">
+        <button onClick={() => { addModule(module) }}>Add</button>
+        <input value={module.name} onChange={
+          (e) => setModule({...module, name: e.target.value })
+        }/>
+        <textarea value={module.description}
+          onChange={(e) => setModule({
+          ...module, description: e.target.value })}
+        />
+      </li>
       {
        modulesData
          .filter((module) => module.course === courseId)
