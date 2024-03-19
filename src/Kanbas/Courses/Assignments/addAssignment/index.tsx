@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { addAssignment, selectAssignment } from "../assignmentsReducer";
 import { KanbasState } from "../../../store";
 
-const AddAssignment = () => {
+function AddAssignment () {
 const { courseId } = useParams();
 const navigate = useNavigate();
 

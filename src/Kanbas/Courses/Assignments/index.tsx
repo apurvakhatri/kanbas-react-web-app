@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-// import { assignments } from "../../Database";
 import { AiOutlinePlus, AiFillCheckCircle } from "react-icons/ai";
 import { HiOutlineEllipsisVertical } from "react-icons/hi2";
 import { TfiPencilAlt } from 'react-icons/tfi';
@@ -16,10 +15,6 @@ import { KanbasState } from "../../store";
 
 function Assignments() {
   const { courseId } = useParams();
-  // const assignments = useSelector(
-  //   (state) => state.assignmentsReducer.assignments
-  // );
-
   const assignments = useSelector(
     (state: KanbasState) =>
     state.assignmentsReducer.assignments
@@ -79,9 +74,18 @@ function Assignments() {
             <TfiPencilAlt color="green" />
             <span className="wd-assignment-title ms-2">{assignment.title}</span>
             <span className="wd-check-ellipse-button-float-end float-end">
+            <button className="btn btn-danger me-1" onClick={(e) => {
+                  e.preventDefault();
+                  dispatch(deleteAssignment(assignment._id))
+                }}
+              >
+                Delete
+              </button>
+
               <AiFillCheckCircle color="green" />
               <HiOutlineEllipsisVertical />
             </span>
+
           </Link>
         ))}
       </div>
