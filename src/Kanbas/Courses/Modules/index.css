@@ -1,40 +1,19 @@
-.wd-modules-list .wd-module-item h5,
-.wd-modules-list .wd-module-item p {
-    color: black;
-}
-
-.ellipsis-icon {
-  color: black;
-}
-
-.module-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.icons {
-  display: flex;
-}
-
 .btn.wd-bg-lightgray {
-    background-color: 	#f1f1f1;
+  background-color: 	#f1f1f1;
 }
 
 .list-group-item {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 .list-group-item.wd-module-item {
-    background-color: #f1f1f1;
-    border: 2px solid silver !important;
-    border-radius: 0px !important;
+  background-color: #f1f1f1;
+  border: 2px solid silver !important;
+  border-radius: 0px !important;
 
 }
 
 
-
-
-
 .list-group.wd-modules-list {
-    background-color: white;
+  background-color: white;
 }
