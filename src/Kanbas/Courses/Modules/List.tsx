@@ -1,12 +1,16 @@
 import React, {useState} from "react";
 import { useParams } from "react-router-dom";
-import { modules } from "../../Database";
 import './index.css';
-import ModuleButtons from "./ModuleButtons";
-import { AiOutlinePlus, AiFillCheckCircle } from "react-icons/ai";
-import { HiOutlineEllipsisVertical } from "react-icons/hi2";
 import { useSelector, useDispatch } from "react-redux";
 import { addModule, deleteModule, updateModule, setModule } from "./modulesReducer";
+import { AiOutlinePlus, AiFillCheckCircle } from "react-icons/ai";
+import { HiOutlineEllipsisVertical } from "react-icons/hi2";
+
+import { modules } from "../../Database";
+import ModuleButtons from "./ModuleButtons";
+
+
+
 import { KanbasState } from "../../store";
 
 function List() {
@@ -41,7 +45,7 @@ function List() {
 }/>
       </li>
       {
-       modules
+       List
          .filter((module) => module.course === courseId)
          .map((module, index) => (
            <li key={index} className="list-group-item wd-module-item mb-4">

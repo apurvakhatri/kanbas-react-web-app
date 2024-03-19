@@ -1,16 +1,34 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import { assignments } from "../../Database";
+// import { assignments } from "../../Database";
 import { AiOutlinePlus, AiFillCheckCircle } from "react-icons/ai";
 import { HiOutlineEllipsisVertical } from "react-icons/hi2";
 import { TfiPencilAlt } from 'react-icons/tfi';
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addAssignment,
+  updateAssignment,
+  deleteAssignment,
+  selectAssignment,
+} from "./assignmentsReducer";
 import "./index.css";
+import { KanbasState } from "../../store";
 
 function Assignments() {
   const { courseId } = useParams();
+  // const assignments = useSelector(
+  //   (state) => state.assignmentsReducer.assignments
+  // );
+
+  const assignments = useSelector(
+    (state: KanbasState) =>
+    state.assignmentsReducer.assignments
+  );
+
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId
   );
+  const dispatch = useDispatch();
 
   return (
     <div className="me-5">
@@ -25,10 +43,12 @@ function Assignments() {
             <AiOutlinePlus />
             Group
           </button>
-          <button className="btn btn-danger">
-            <AiOutlinePlus />
-            Assignment
-          </button>
+          <Link to={`/Kanbas/Courses/${courseId}/Assignments/addAssignment`}>
+            <button className="btn btn-danger">
+              <AiOutlinePlus />
+              Assignment
+            </button>
+          </Link>
           <button className="btn wd-bg-lightgray">
             <HiOutlineEllipsisVertical />
           </button>

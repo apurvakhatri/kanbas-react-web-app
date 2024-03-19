@@ -3,7 +3,7 @@ import { modules } from "../../Database";
 
 const initialState = {
   modules: modules,
-  module: { name: "New Module 123", description: "New Description" },
+  module: { name: "Module Name", description: "Module Description" },
 };
 
 const modulesSlice = createSlice({
@@ -13,8 +13,8 @@ const modulesSlice = createSlice({
     addModule: (state, action) => {
       state.modules = [
         { ...action.payload, _id: new Date().getTime().toString() },
-          ...state.modules,
-        ];
+        ...state.modules,
+      ];
     },
     deleteModule: (state, action) => {
       state.modules = state.modules.filter(
@@ -22,19 +22,16 @@ const modulesSlice = createSlice({
       );
     },
     updateModule: (state, action) => {
-        state.modules = state.modules.map((module) => {
-            if (module._id === action.payload._id) {
-                return action.payload;
-            } else {
-                return module;
-            }
-        });
+      state.modules = state.modules.map((m) => {
+        return m._id === action.payload._id ? action.payload : m;
+      });
     },
     setModule: (state, action) => {
-        state.module = action.payload;
+      state.module = action.payload;
     },
   },
 });
 
-export const { addModule, deleteModule, updateModule, setModule } = modulesSlice.actions;
+export const { addModule, deleteModule, updateModule, setModule } =
+  modulesSlice.actions;
 export default modulesSlice.reducer;
