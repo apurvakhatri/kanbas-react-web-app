@@ -7,6 +7,7 @@ import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import Editor from "./Assignments/Editor"
+import AddAssignment from "./Assignments/addAssignment";
 import Grades from "./Grades";
 
 
@@ -28,6 +29,7 @@ function Courses( {courses}: {courses: any}) {
                   <Route path="Assignments" element={<Assignments/>} />
 {/*                   <Route path="Assignments" element={<h1>Assignments</h1>} /> */}
                    <Route path="Assignments/:assignmentId" element={<Editor />} />
+                   <Route path="Assignments/addAssignment" element={ <AddAssignment/> } />
                    <Route path="Grades" element={<Grades />} />
               </Routes>
           </div>
