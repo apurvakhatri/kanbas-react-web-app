@@ -21,7 +21,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
           {courses.map((course: any) => (
             <div key={course._id} className="col" style={{ width: 300 }}>
               <div className="card">
-                <img src={`/images/${course.image}`} className="card-img-top" alt={course.name} style={{ height: 50 }} />
+                <img src={`/images/yellow.png`} className="card-img-top" alt={course.name} style={{ height: 50 }} />
                 <div className="card-body">
                   <Link className="card-title" to={`/Kanbas/Courses/${course._id}/Home`}
                     style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>
